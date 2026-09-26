@@ -103,6 +103,7 @@ header .bobber {
     flex-direction: column;
     margin: 0;
     align-items: center;
+    padding: 0px;
 
     height: auto;
 }
@@ -244,10 +245,17 @@ header .bobber {
     background-color: transparent;
     border-radius: 0;
     border: none;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
 }
 
 .card:hover {
     background-color: rgb(22, 22, 22);
+}
+
+.card-body {
+    padding-top: 0px;
 }
 
 .card p {
@@ -259,7 +267,7 @@ header .bobber {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-    margin-bottom: 0;
+    margin: 0;
 
     text-decoration: underline;
     text-decoration-color: rgba(0, 0, 0, 0);
@@ -524,7 +532,6 @@ a:hover {
         flex-direction: column;
         padding: 0px 1rem;
         width: 100%;
-        background-color: #525252;
     }
 
     .article-row .article-child {
@@ -543,6 +550,7 @@ a:hover {
         align-self: center;
         width: 100%;
         margin-top: 2rem;
+        margin-bottom: 2rem;
         height: fit-content;
     }
 
