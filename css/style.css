@@ -543,6 +543,10 @@ a:hover {
     .header-nav {
         align-items: center;
     }
+    
+    header .header-nav .nav-link {
+    margin-right: 0px;
+    }
 
     footer {
         flex-direction: column-reverse;
