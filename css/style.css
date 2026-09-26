@@ -535,10 +535,10 @@ a:hover {
 
     header {
         align-items: center;
-    }
-
-    .header-name {
-        margin-right: 50px;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        background-color: #525252;
     }
 
     .header-nav {
@@ -547,6 +547,9 @@ a:hover {
 
     footer {
         flex-direction: column-reverse;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
     }
 
     .contact-buttons {
