@@ -521,6 +521,7 @@ a:hover {
 @media (max-width: 767.98px) {
     .article-row {
         flex-direction: column;
+        margin: 0px, 1rem;
     }
 
     .article-row .article-child {
@@ -546,6 +547,7 @@ a:hover {
     
     header .header-nav .nav-link {
     margin-right: 0px;
+    margin-bottom: 1rem;
     }
 
     footer {
