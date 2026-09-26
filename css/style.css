@@ -532,6 +532,32 @@ a:hover {
         max-height: 450px;
         align-self: center;
     }
+
+    header {
+        align-items: center;
+    }
+
+    .header-name {
+        margin-right: 50px;
+    }
+
+    .header-nav {
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .contact-buttons {
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .copyright {
+        text-align: center;
+        align-items: center;
+    }
     
     .navbar {
         background-color: transparent;
