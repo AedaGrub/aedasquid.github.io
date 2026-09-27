@@ -25,6 +25,9 @@ body {
     --softWhite: #e0e0e0;
 
     background-color: var(--lightGrey);
+
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -37,6 +40,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    align-self: center;
     justify-self: center;
 
     width: clamp(0px, 1200px, 90vw);
@@ -98,23 +103,7 @@ header .bobber {
     animation: bobbing 3s infinite ease-in-out;
 }
 
-.cardsContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-top: -1rem;
-    align-items: center;
-    padding: 0px;
 
-    height: auto;
-
-    background-color: aqua;
-}
-
-.cardsContainer h1 {
-    text-align: center;
-    margin-bottom: 1rem;;
-}
 
 .blogButton {
     margin: 1rem 0;
@@ -201,50 +190,25 @@ header .bobber {
     color: var(--orange);
 }
 
-/* OVERWRITES BOOTSTRAP PAGINATION PARAMETERS */
-.pagination {
-    font-family: "Source Serif", serif;
-    margin-bottom: 2rem;
-}
-
-.page-item .page-link {
-    background: transparent;
-    border: none;
-    color: white;
-}
-
-.page-item .page-link:hover {
-    color: var(--orange);
-}
-
-.disabled .page-link {
-    color: white;
-    opacity: 50%;
-}
-
-.page-current .page-link {
-    color: var(--orange);
-    opacity: 100%;
-}
-
-.page-item .page-next, .page-item .page-prev{
-    background: url(../images/arrowRight.png);
-    background-size: contain;
-    color: transparent;
-    transition: 0.15s ease;
-}
-
-.page-item .page-prev {
-    transform: scale(-1);
-}
-
-.page-item .page-next:hover, .page-item .page-prev:hover {
-    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(-25deg);
-    color: transparent;
-}
-/* OVERWRITES BOOTSTRAP PAGINATION PARAMETERS */
-
 /*#region OVERWRITES BOOTSTRAP CARDS */
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: -1rem;
+    align-items: center;
+    padding: 0px;
+
+    height: auto;
+
+    background-color: aqua;
+}
+
+.cardsContainer h1 {
+    text-align: center;
+    margin-bottom: 1rem;;
+}
+
 .card {
     font-family: "Montserrat", serif;
     background-color: transparent;
