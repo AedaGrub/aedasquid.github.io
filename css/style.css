@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font: 1.2rem/1.25 "Montserrat", serif;
+    font: 1.2rem/1.25 "Montserrat", sans-serif;
     color: white;
 
     --transGrey: rgba(0, 0, 0, 0.5);
@@ -101,8 +101,6 @@ header .bobber {
     animation: bobbing 3s infinite ease-in-out;
 }
 
-
-
 .blogButton {
     margin: 1rem 0;
     transition: 0.1s ease;
@@ -112,7 +110,7 @@ header .bobber {
     transform: scale(1.05);
 }
 
-.article-row {
+.article {
     align-self: center;
     justify-self: center;
     width: clamp(0px, 1200px, 90vw);
@@ -127,52 +125,81 @@ header .bobber {
     color: var(--softWhite);
 }
 
-.article-row h1, .article-row subtitle{
-    margin-bottom: 0;
-    font-size: 2rem;
+.article .line {
+    width: 100%;
+    margin: 0px;
 }
 
-.article-row subtitle {
-    color:var(--lightGrey)
-}
-
-.article-row .article-child {
+.article .half {
     flex: 1;
     max-width: 50%;
+    align-self: center;
+    margin: 0px auto;
 }
 
-.article-row .article-child-img {
+.article .full {
+    max-width: 100%;
+}
+
+.article .centered {
+    justify-self: center;
+}
+
+.article img {
     max-width: clamp(0px, 500px, 50%);
     object-fit: contain;
-    align-self: flex-start;
 }
 
-.article-row li {
+.article iframe {
+    width: clamp(0px, 750px, 100%);
+    object-fit: contain;
+    align-self: center;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+
+    transition: 0.15s ease;
+}
+
+.article-date {
+    color: var(--lightGrey);
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.article li {
     margin-bottom: 1rem;
 }
 
-.article-row h4 {
+.article h4 {
     color: var(--softOrange);
     font-weight: 1000;
     margin-top: 1rem;
 }
 
-.article-row .thumbnail {
+.article .thumbnail {
     width: 100%;
     object-fit: cover;
     align-self: center;
     margin: 1rem;
 }
 
-.article-row .blogButton {
+.article .blogButton {
     margin: 1rem auto;
 }
 
-.article-row .blogButton img {
+.article .blogButton img {
     transform: scale(-1);
 }
 
-.article-row a {
+.article a {
     color: var(--softOrange);
 
     text-decoration: none;
@@ -181,7 +208,7 @@ header .bobber {
     transition: 0.2s ease;
 }
 
-.article-row a:hover {
+.article a:hover {
     text-decoration: underline;
     color: var(--orange);
 }
@@ -204,7 +231,7 @@ header .bobber {
 }
 
 .card {
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", sans-serif;
     background-color: transparent;
     border-radius: 0;
     border: none;
@@ -492,17 +519,17 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
-    .article-row {
+    .article {
         flex-direction: column;
         padding: 0px 1rem;
         width: 100%;
     }
 
-    .article-row .article-child {
+    .article .half {
         max-width: 100%;
     }
 
-    .article-row .article-child-img {
+    .article img {
         max-width: 100%;
         max-height: 450px;
         align-self: center;
