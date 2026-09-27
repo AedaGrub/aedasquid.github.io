@@ -24,6 +24,9 @@ body {
     --black: #121212;
     --softWhite: #e0e0e0;
 
+    justify-content: center;
+    align-items: center;
+
     background-color: var(--lightGrey);
 }
 
