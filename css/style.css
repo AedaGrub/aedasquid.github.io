@@ -24,7 +24,7 @@ body {
     --black: #121212;
     --softWhite: #e0e0e0;
 
-    background-color: var(--lightGrey);
+    background-color: var(--black);
 
     display: flex;
     flex-direction: column;
@@ -48,8 +48,6 @@ header {
     height: fit-content;
 
     margin-top: 5rem;
-
-    background-color: var(--orange);
 }
 
 header .header-name {
@@ -127,8 +125,6 @@ header .bobber {
     letter-spacing: 0.025rem;
     line-height: 1.7rem;
     color: var(--softWhite);
-
-    background-color: aqua;
 }
 
 .article-row h1, .article-row subtitle{
@@ -200,8 +196,6 @@ header .bobber {
     padding: 0px;
 
     height: auto;
-
-    background-color: aqua;
 }
 
 .cardsContainer h1 {
@@ -414,6 +408,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    align-self: center;
     justify-self: center;
     width: clamp(0px, 1200px, 90vw);
     height: fit-content;
