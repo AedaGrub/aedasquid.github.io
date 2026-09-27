@@ -24,7 +24,7 @@ body {
     --black: #121212;
     --softWhite: #e0e0e0;
 
-    background-color: var(--black);
+    background-color: var(--lightGrey);
 }
 
 h1, h2, h3 {
@@ -43,6 +43,8 @@ header {
     height: fit-content;
 
     margin-top: 5rem;
+
+    background-color: var(--orange);
 }
 
 header .header-name {
