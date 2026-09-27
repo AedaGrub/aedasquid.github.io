@@ -24,9 +24,6 @@ body {
     --black: #121212;
     --softWhite: #e0e0e0;
 
-    justify-content: center;
-    align-items: center;
-
     background-color: var(--lightGrey);
 }
 
@@ -101,7 +98,7 @@ header .bobber {
     animation: bobbing 3s infinite ease-in-out;
 }
 
-.blogPreview {
+.cardsContainer {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -110,9 +107,11 @@ header .bobber {
     padding: 0px;
 
     height: auto;
+
+    background-color: aqua;
 }
 
-.blogPreview h1 {
+.cardsContainer h1 {
     text-align: center;
     margin-bottom: 1rem;;
 }
@@ -139,6 +138,8 @@ header .bobber {
     letter-spacing: 0.025rem;
     line-height: 1.7rem;
     color: var(--softWhite);
+
+    background-color: aqua;
 }
 
 .article-row h1, .article-row subtitle{
